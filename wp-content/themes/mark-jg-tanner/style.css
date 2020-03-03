@@ -317,9 +317,12 @@ input[type=radio]:checked:after, input[type=checkbox]:checked:after {font-family
 .mobile-menu {margin: 0;padding: 0;display: flex;display: none;flex-direction: column;}
 @media (min-width: 750px) {.mobile-menu {display: none !important;}}
 .mobile-menu--active {display: block;}
-.mobile-menu a {padding: 1rem 0;display: table;width: 100%;}
+.mobile-menu ul {margin: 0;padding: 1em;}
+.mobile-menu li {font-weight: 400;padding: 1rem 0;display: table;width: 100%;}
+.mobile-menu li:not(:last-child) {border-bottom: 1px solid #ebebeb;}
 .container {padding: 0 1em;}
 @media (min-width: 750px) {.container {max-width: 1240px;margin: 0 auto;padding: 0 2em;}}
+@media (max-width: 750px) {.container--project {padding-bottom: 2em;}}
 @media (min-width: 750px) {.span__8 {width: 80%;}}
 .previews {display: flex;justify-content: space-between;flex-wrap: wrap;}
 .preview {width: 100%;margin-bottom: 1.5em;}
